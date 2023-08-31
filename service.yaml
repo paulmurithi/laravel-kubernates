@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: my1health-api-service
+  namespace: my1health-api
+spec:
+  selector:
+    app: my1health-api
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
